@@ -2,16 +2,29 @@ body {
     background-color: gainsboro;
 }
 
+.App {
+    display: flex;
+    gap: 2em;
+}
+
 .shape {
     width: 70px;
-    height: 70px;
+    height: auto;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    clip-path: url(#anb-icon-shape);
+    clip-path: path("M1.72652 18.1494C2.54746 11.6661 6.26818 6.06923 11.9486 2.80108C17.6554 -0.480292 24.4083 -0.903697 30.486 1.66319C41.2774 6.21477 51.5656 11.9836 61.0329 18.811C66.5809 22.8069 69.772 29.1844 69.6661 35.9853C69.772 42.7862 66.5809 49.1637 61.0329 53.1596C51.5524 59.987 41.2774 65.7558 30.486 70.3074C24.4083 72.8743 17.6554 72.4509 11.9486 69.1695C6.26818 65.9014 2.54746 60.3045 1.72652 53.8212C0.164078 41.9923 0.164078 29.9518 1.72652 18.123");
     margin: auto;
+    aspect-ratio: 69.11 / 71.97;
+}
+
+.shape--svg {
+    width: 70px;
+    height: 70px;
+    clip-path: url(#anb-icon-shape);
+    aspect-ratio: unset;
 }
 
 .icon-shape__svg {
