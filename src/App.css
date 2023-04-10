@@ -7,6 +7,10 @@ body {
     gap: 2em;
 }
 
+section {
+    flex: 1;
+}
+
 .icon-shape {
     display: flex;
     align-items: center;
@@ -16,6 +20,10 @@ body {
     position: relative;
     background-color: #fff;
     clip-path: url(#round-triangle);
+}
+
+.icon-shape--var {
+    clip-path: var(--icon-shape-path);
 }
 
 .icon-shape--path {

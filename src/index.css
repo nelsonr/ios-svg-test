@@ -1,7 +1,11 @@
+html,
+body {
+    height: 100%;
+}
+
 body {
     display: flex;
-    place-items: center;
-    place-content: center;
-    height: 100vh;
+    align-items: center;
+    justify-content: center;
     margin: 0;
 }
